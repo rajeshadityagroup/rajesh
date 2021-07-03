@@ -1,0 +1,18 @@
+class Solution {
+    public static boolean isPowerOfTwo(int n) {
+        if(n<1)
+        return false;
+      
+            if(n==Math.pow(2,Math.round((Math.log(n)/Math.log(2)))))
+                return true;
+        else
+            return false;
+    }
+
+public static void main(String args[])
+{
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+   System.out.print(isPowerOfTwo(n));
+}
+}
